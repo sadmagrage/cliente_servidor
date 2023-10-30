@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="../static/css/login.css"> -->
+</head>
+<body>
+    <div class="form">
+        <h1>Login</h1>
+        <div class="campo">
+            <label for="nome">Nome: </label>
+            <input type="text" name="" id="nome">
+        </div>
+        <br>
+        <div class="campo">
+            <label for="senha">Senha: </label>
+            <input type="password" name="" id="senha">
+        </div>
+        <br>
+        <div class="container_botao">
+            <input class="botao" type="button" onclick="validateCredentials()" value="Enviar">
+        </div>
+        <div id="resp"></div>
+        <script>
+            function validateCredentials () {
+                const nome = document.querySelector("#nome").value;
+                const senha = document.querySelector("#senha").value;
+                
+                const response = nome == "flavinho" && senha == "flavinho123" ?  `<p class="accepted">ACESSO CONCEDIDO</p>` : `<p class="rejected">USUÁRIO OU SENHA INVÁLIDOS</p>`;
+
+                document.querySelector("#resp").innerHTML = response;
+            }
+        </script>
+    </div>
+</body>
+</html>

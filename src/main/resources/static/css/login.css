@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url("../img/background-image.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 30vh;
+    width: 40vw;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.campo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.campo label {
+    font-size: 25px;
+    width: 30%;
+}
+
+.campo input {
+    width: 58%;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 0px 3px;
+    border-color: transparent;
+}
+
+.container_botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    width: 40%;
+    background-color: aquamarine;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+#resp {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.accepted, .rejected {
+    width: 100%;
+    text-align: center;
+}
+
+.accepted {
+    color: greenyellow;
+}
+
+.rejected {
+    color: red;
+}
+
+input:focus {
+    outline: none;
+}
